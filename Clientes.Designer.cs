@@ -30,9 +30,9 @@
         {
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.RFC = new System.Windows.Forms.TextBox();
+            this.NOMBRE = new System.Windows.Forms.TextBox();
+            this.ID_CLIENTE = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -55,27 +55,29 @@
             this.button1.TabIndex = 22;
             this.button1.Text = "Registrar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox3
+            // RFC
             // 
-            this.textBox3.Location = new System.Drawing.Point(157, 64);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(135, 23);
-            this.textBox3.TabIndex = 19;
+            this.RFC.Location = new System.Drawing.Point(157, 64);
+            this.RFC.Name = "RFC";
+            this.RFC.Size = new System.Drawing.Size(135, 23);
+            this.RFC.TabIndex = 19;
             // 
-            // textBox2
+            // NOMBRE
             // 
-            this.textBox2.Location = new System.Drawing.Point(157, 35);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(135, 23);
-            this.textBox2.TabIndex = 18;
+            this.NOMBRE.Location = new System.Drawing.Point(157, 35);
+            this.NOMBRE.Name = "NOMBRE";
+            this.NOMBRE.Size = new System.Drawing.Size(135, 23);
+            this.NOMBRE.TabIndex = 18;
             // 
-            // textBox1
+            // ID_CLIENTE
             // 
-            this.textBox1.Location = new System.Drawing.Point(157, 6);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(135, 23);
-            this.textBox1.TabIndex = 17;
+            this.ID_CLIENTE.Location = new System.Drawing.Point(157, 6);
+            this.ID_CLIENTE.Name = "ID_CLIENTE";
+            this.ID_CLIENTE.Size = new System.Drawing.Size(135, 23);
+            this.ID_CLIENTE.TabIndex = 17;
+            this.ID_CLIENTE.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label4
             // 
@@ -112,9 +114,9 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.RFC);
+            this.Controls.Add(this.NOMBRE);
+            this.Controls.Add(this.ID_CLIENTE);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -129,9 +131,9 @@
 
         private Button button2;
         private Button button1;
-        private TextBox textBox3;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox RFC;
+        private TextBox NOMBRE;
+        private TextBox ID_CLIENTE;
         private Label label4;
         private Label label2;
         private Label label1;

@@ -30,10 +30,10 @@
         {
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.CANTIDAD = new System.Windows.Forms.TextBox();
+            this.ID_PROD = new System.Windows.Forms.TextBox();
+            this.ID_VENTA = new System.Windows.Forms.TextBox();
+            this.ID_DV = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -57,34 +57,36 @@
             this.button1.TabIndex = 22;
             this.button1.Text = "Registrar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox5
+            // CANTIDAD
             // 
-            this.textBox5.Location = new System.Drawing.Point(167, 107);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(135, 23);
-            this.textBox5.TabIndex = 20;
+            this.CANTIDAD.Location = new System.Drawing.Point(167, 107);
+            this.CANTIDAD.Name = "CANTIDAD";
+            this.CANTIDAD.Size = new System.Drawing.Size(135, 23);
+            this.CANTIDAD.TabIndex = 20;
             // 
-            // textBox3
+            // ID_PROD
             // 
-            this.textBox3.Location = new System.Drawing.Point(167, 78);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(135, 23);
-            this.textBox3.TabIndex = 19;
+            this.ID_PROD.Location = new System.Drawing.Point(167, 78);
+            this.ID_PROD.Name = "ID_PROD";
+            this.ID_PROD.Size = new System.Drawing.Size(135, 23);
+            this.ID_PROD.TabIndex = 19;
             // 
-            // textBox2
+            // ID_VENTA
             // 
-            this.textBox2.Location = new System.Drawing.Point(167, 49);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(135, 23);
-            this.textBox2.TabIndex = 18;
+            this.ID_VENTA.Location = new System.Drawing.Point(167, 49);
+            this.ID_VENTA.Name = "ID_VENTA";
+            this.ID_VENTA.Size = new System.Drawing.Size(135, 23);
+            this.ID_VENTA.TabIndex = 18;
             // 
-            // textBox1
+            // ID_DV
             // 
-            this.textBox1.Location = new System.Drawing.Point(167, 20);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(135, 23);
-            this.textBox1.TabIndex = 17;
+            this.ID_DV.Location = new System.Drawing.Point(167, 20);
+            this.ID_DV.Name = "ID_DV";
+            this.ID_DV.Size = new System.Drawing.Size(135, 23);
+            this.ID_DV.TabIndex = 17;
+            this.ID_DV.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label3
             // 
@@ -129,10 +131,10 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.CANTIDAD);
+            this.Controls.Add(this.ID_PROD);
+            this.Controls.Add(this.ID_VENTA);
+            this.Controls.Add(this.ID_DV);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
@@ -148,10 +150,10 @@
 
         private Button button2;
         private Button button1;
-        private TextBox textBox5;
-        private TextBox textBox3;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox CANTIDAD;
+        private TextBox ID_PROD;
+        private TextBox ID_VENTA;
+        private TextBox ID_DV;
         private Label label3;
         private Label label4;
         private Label label2;

@@ -50,8 +50,20 @@ namespace Practica
         {
             conexion = new MySqlConnection("server=localhost;user=root;database=tienda;port=3306");
             conexion.Open();
-            string sql = $@"INSERT INTO proveedor values ({ID_PROV.Text},/"{NOMBRE.Text}/"", {DIRECCION.Text})";
-            MySqlCommand comando = new MySqlCommand(sql, conexion);
+            //string sql = $@"INSERT INTO proveedor values ({ID_PROV.Text},/"{NOMBRE.Text}/"", {DIRECCION.Text})";
+            MySqlCommand comando = new MySqlCommand("INSERT INTO proveedor values(@ID_PROV, @NOMBRE, @DIR, @TEl, @CORREO)", conexion);
+            comando.Parameters.Add("ID_PROV",MySqlDbType.VarChar).Value = ID_PROV.Text;
+            comando.Parameters.Add("NOMBRE", MySqlDbType.VarChar).Value = NOMBRE.Text;
+            comando.Parameters.Add("DIR", MySqlDbType.VarChar).Value = DIRECCION.Text;
+            comando.Parameters.Add("TEL", MySqlDbType.VarChar).Value = TELEFONO.Text;
+            comando.Parameters.Add("CORREO", MySqlDbType.VarChar).Value = CORREO.Text;
+            comando.ExecuteNonQuery();
+            MessageBox.Show("Registro exitoso");
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

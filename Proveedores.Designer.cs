@@ -36,8 +36,8 @@
             this.ID_PROV = new System.Windows.Forms.TextBox();
             this.NOMBRE = new System.Windows.Forms.TextBox();
             this.DIRECCION = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.CORREO = new System.Windows.Forms.TextBox();
+            this.TELEFONO = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -112,19 +112,20 @@
             this.DIRECCION.Size = new System.Drawing.Size(135, 23);
             this.DIRECCION.TabIndex = 7;
             // 
-            // textBox4
+            // CORREO
             // 
-            this.textBox4.Location = new System.Drawing.Point(169, 134);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(135, 23);
-            this.textBox4.TabIndex = 9;
+            this.CORREO.Location = new System.Drawing.Point(169, 134);
+            this.CORREO.Name = "CORREO";
+            this.CORREO.Size = new System.Drawing.Size(135, 23);
+            this.CORREO.TabIndex = 9;
             // 
-            // textBox5
+            // TELEFONO
             // 
-            this.textBox5.Location = new System.Drawing.Point(169, 105);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(135, 23);
-            this.textBox5.TabIndex = 8;
+            this.TELEFONO.Location = new System.Drawing.Point(169, 105);
+            this.TELEFONO.Name = "TELEFONO";
+            this.TELEFONO.Size = new System.Drawing.Size(135, 23);
+            this.TELEFONO.TabIndex = 8;
+            this.TELEFONO.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // button1
             // 
@@ -152,8 +153,8 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.CORREO);
+            this.Controls.Add(this.TELEFONO);
             this.Controls.Add(this.DIRECCION);
             this.Controls.Add(this.NOMBRE);
             this.Controls.Add(this.ID_PROV);
@@ -180,8 +181,8 @@
         private TextBox ID_PROV;
         private TextBox NOMBRE;
         private TextBox DIRECCION;
-        private TextBox textBox4;
-        private TextBox textBox5;
+        private TextBox CORREO;
+        private TextBox TELEFONO;
         private Button button1;
         private Button button2;
     }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,19 @@ namespace Practica
         public Ventas()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MySqlConnection conexion;
+            conexion = new MySqlConnection("server=localhost;user=root;database=tienda;port=3306");
+            conexion.Open();
+            MySqlCommand comando = new MySqlCommand("INSERT INTO venta values(@ID_VENTA, @ID_CLIENTE, @FECHA)", conexion);
+            comando.Parameters.Add("ID_VENTA", MySqlDbType.VarChar).Value = ID_VENTA.Text;
+            comando.Parameters.Add("ID_CLIENTE", MySqlDbType.VarChar).Value = ID_CLIENTE.Text;
+            comando.Parameters.Add("FECHA", MySqlDbType.Timestamp).Value = DateTime.Now;
+            comando.ExecuteNonQuery();
+            MessageBox.Show("Registro exitoso");
         }
     }
 }
