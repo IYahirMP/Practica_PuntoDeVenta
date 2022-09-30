@@ -33,13 +33,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.ID_PROV = new System.Windows.Forms.TextBox();
             this.NOMBRE = new System.Windows.Forms.TextBox();
             this.DIRECCION = new System.Windows.Forms.TextBox();
             this.CORREO = new System.Windows.Forms.TextBox();
             this.TELEFONO = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.ID_PROV = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -90,14 +90,6 @@
             this.label5.Text = "Correo";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // ID_PROV
-            // 
-            this.ID_PROV.Location = new System.Drawing.Point(169, 18);
-            this.ID_PROV.Name = "ID_PROV";
-            this.ID_PROV.Size = new System.Drawing.Size(135, 23);
-            this.ID_PROV.TabIndex = 5;
-            this.ID_PROV.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
             // NOMBRE
             // 
             this.NOMBRE.Location = new System.Drawing.Point(169, 47);
@@ -145,6 +137,15 @@
             this.button2.TabIndex = 11;
             this.button2.Text = "Limpiar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // ID_PROV
+            // 
+            this.ID_PROV.Location = new System.Drawing.Point(169, 18);
+            this.ID_PROV.Name = "ID_PROV";
+            this.ID_PROV.Size = new System.Drawing.Size(135, 23);
+            this.ID_PROV.TabIndex = 5;
+            this.ID_PROV.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // Proveedores
             // 
@@ -178,12 +179,12 @@
         private Label label3;
         private Label label4;
         private Label label5;
-        private TextBox ID_PROV;
         private TextBox NOMBRE;
         private TextBox DIRECCION;
         private TextBox CORREO;
         private TextBox TELEFONO;
         private Button button1;
         private Button button2;
+        private TextBox ID_PROV;
     }
 }

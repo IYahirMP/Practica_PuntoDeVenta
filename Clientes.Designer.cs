@@ -46,6 +46,7 @@
             this.button2.TabIndex = 23;
             this.button2.Text = "Limpiar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -122,6 +123,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Clientes";
             this.Text = "Clientes";
+            this.Load += new System.EventHandler(this.Clientes_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

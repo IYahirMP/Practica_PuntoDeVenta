@@ -22,6 +22,8 @@ namespace Practica
         {
             MySqlConnection conexion;
             conexion = new MySqlConnection("server=localhost;user=root;database=tienda;port=3306");
+
+            try { 
             conexion.Open();
             MySqlCommand comando = new MySqlCommand("INSERT INTO venta values(@ID_VENTA, @ID_CLIENTE, @FECHA)", conexion);
             comando.Parameters.Add("ID_VENTA", MySqlDbType.VarChar).Value = ID_VENTA.Text;
@@ -29,6 +31,15 @@ namespace Practica
             comando.Parameters.Add("FECHA", MySqlDbType.Timestamp).Value = DateTime.Now;
             comando.ExecuteNonQuery();
             MessageBox.Show("Registro exitoso");
+            }
+            catch (Exception ex) { MessageBox.Show("Ha ocurrido un error.\n" + ex.Message); }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ID_VENTA.Clear();
+            ID_CLIENTE.Clear();
+            FECHA.Clear();
         }
     }
 }
