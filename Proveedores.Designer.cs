@@ -39,7 +39,7 @@
             this.TELEFONO = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.ID_PROV = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -121,7 +121,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(39, 183);
+            this.button1.Location = new System.Drawing.Point(24, 183);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 10;
@@ -131,7 +131,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(188, 183);
+            this.button2.Location = new System.Drawing.Point(229, 183);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 11;
@@ -139,26 +139,26 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // ID_PROV
+            // comboBox1
             // 
-            this.ID_PROV.Location = new System.Drawing.Point(169, 18);
-            this.ID_PROV.Name = "ID_PROV";
-            this.ID_PROV.Size = new System.Drawing.Size(135, 23);
-            this.ID_PROV.TabIndex = 5;
-            this.ID_PROV.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(169, 18);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(135, 23);
+            this.comboBox1.TabIndex = 12;
             // 
             // Proveedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.CORREO);
             this.Controls.Add(this.TELEFONO);
             this.Controls.Add(this.DIRECCION);
             this.Controls.Add(this.NOMBRE);
-            this.Controls.Add(this.ID_PROV);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
@@ -185,6 +185,6 @@
         private TextBox TELEFONO;
         private Button button1;
         private Button button2;
-        private TextBox ID_PROV;
+        private ComboBox comboBox1;
     }
 }

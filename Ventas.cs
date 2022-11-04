@@ -41,5 +41,10 @@ namespace Practica
             ID_CLIENTE.Clear();
             FECHA.Clear();
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

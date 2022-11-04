@@ -36,6 +36,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.ID_PROD = new System.Windows.Forms.TextBox();
             this.ID_PROV = new System.Windows.Forms.ComboBox();
+            this.Precio = new System.Windows.Forms.TextBox();
+            this.StockMinimo = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.StockMaximo = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button2
@@ -107,11 +113,65 @@
             this.ID_PROV.Size = new System.Drawing.Size(135, 23);
             this.ID_PROV.TabIndex = 25;
             // 
+            // Precio
+            // 
+            this.Precio.Location = new System.Drawing.Point(173, 107);
+            this.Precio.Name = "Precio";
+            this.Precio.Size = new System.Drawing.Size(135, 23);
+            this.Precio.TabIndex = 30;
+            // 
+            // StockMinimo
+            // 
+            this.StockMinimo.Location = new System.Drawing.Point(173, 162);
+            this.StockMinimo.Name = "StockMinimo";
+            this.StockMinimo.Size = new System.Drawing.Size(135, 23);
+            this.StockMinimo.TabIndex = 29;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(27, 165);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(81, 15);
+            this.label3.TabIndex = 28;
+            this.label3.Text = "Stock mínimo";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(28, 136);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(83, 15);
+            this.label5.TabIndex = 27;
+            this.label5.Text = "Stock máximo";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(28, 107);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(40, 15);
+            this.label6.TabIndex = 26;
+            this.label6.Text = "Precio";
+            // 
+            // StockMaximo
+            // 
+            this.StockMaximo.Location = new System.Drawing.Point(173, 136);
+            this.StockMaximo.Name = "StockMaximo";
+            this.StockMaximo.Size = new System.Drawing.Size(135, 23);
+            this.StockMaximo.TabIndex = 31;
+            // 
             // Productos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.StockMaximo);
+            this.Controls.Add(this.Precio);
+            this.Controls.Add(this.StockMinimo);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.ID_PROV);
             this.Controls.Add(this.ID_PROD);
             this.Controls.Add(this.button2);
@@ -137,5 +197,11 @@
         private Label label1;
         private TextBox ID_PROD;
         private ComboBox ID_PROV;
+        private TextBox Precio;
+        private TextBox StockMinimo;
+        private Label label3;
+        private Label label5;
+        private Label label6;
+        private TextBox StockMaximo;
     }
 }

@@ -36,6 +36,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.Total = new System.Windows.Forms.TextBox();
+            this.Hora = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.labelHora = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button2
@@ -106,11 +110,48 @@
             this.label1.TabIndex = 12;
             this.label1.Text = "Clave de la venta";
             // 
+            // Total
+            // 
+            this.Total.Location = new System.Drawing.Point(167, 137);
+            this.Total.Name = "Total";
+            this.Total.Size = new System.Drawing.Size(135, 23);
+            this.Total.TabIndex = 27;
+            // 
+            // Hora
+            // 
+            this.Hora.Location = new System.Drawing.Point(167, 108);
+            this.Hora.Name = "Hora";
+            this.Hora.Size = new System.Drawing.Size(135, 23);
+            this.Hora.TabIndex = 26;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(21, 140);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(32, 15);
+            this.label3.TabIndex = 25;
+            this.label3.Text = "Total";
+            // 
+            // labelHora
+            // 
+            this.labelHora.AutoSize = true;
+            this.labelHora.Location = new System.Drawing.Point(22, 111);
+            this.labelHora.Name = "labelHora";
+            this.labelHora.Size = new System.Drawing.Size(33, 15);
+            this.labelHora.TabIndex = 24;
+            this.labelHora.Text = "Hora";
+            this.labelHora.Click += new System.EventHandler(this.label5_Click);
+            // 
             // Ventas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Total);
+            this.Controls.Add(this.Hora);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.labelHora);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.FECHA);
@@ -136,5 +177,9 @@
         private Label label4;
         private Label label2;
         private Label label1;
+        private TextBox Total;
+        private TextBox Hora;
+        private Label label3;
+        private Label labelHora;
     }
 }
