@@ -51,5 +51,11 @@ namespace Practica
             DetalleVenta ventana = new DetalleVenta();
             ventana.Show();
         }
+
+        private void mODIFICARToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ModificarProveedor ventana = new ModificarProveedor();
+            ventana.Show();
+        }
     }
 }

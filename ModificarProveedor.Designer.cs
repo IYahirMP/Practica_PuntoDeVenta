@@ -28,10 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button3 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.ID_PROV = new System.Windows.Forms.ComboBox();
             this.CORREO = new System.Windows.Forms.TextBox();
             this.TELEFONO = new System.Windows.Forms.TextBox();
             this.DIRECCION = new System.Windows.Forms.TextBox();
@@ -41,44 +38,19 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button3
+            // ID_PROV
             // 
-            this.button3.Location = new System.Drawing.Point(118, 171);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 26;
-            this.button3.Text = "Modificar";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(157, 6);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(135, 23);
-            this.comboBox1.TabIndex = 25;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(217, 171);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 24;
-            this.button2.Text = "Limpiar";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(12, 171);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 23;
-            this.button1.Text = "Buscar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.ID_PROV.FormattingEnabled = true;
+            this.ID_PROV.Location = new System.Drawing.Point(157, 6);
+            this.ID_PROV.Name = "ID_PROV";
+            this.ID_PROV.Size = new System.Drawing.Size(135, 23);
+            this.ID_PROV.TabIndex = 25;
+            this.ID_PROV.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // CORREO
             // 
@@ -153,15 +125,45 @@
             this.label1.TabIndex = 14;
             this.label1.Text = "Clave del proveedor";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(12, 177);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 26;
+            this.button1.Text = "Buscar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(123, 177);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 27;
+            this.button2.Text = "Modificar";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(224, 177);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 28;
+            this.button3.Text = "Limpiar";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // ModificarProveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(311, 212);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.ID_PROV);
             this.Controls.Add(this.CORREO);
             this.Controls.Add(this.TELEFONO);
             this.Controls.Add(this.DIRECCION);
@@ -180,11 +182,7 @@
         }
 
         #endregion
-
-        private Button button3;
-        private ComboBox comboBox1;
-        private Button button2;
-        private Button button1;
+        private ComboBox ID_PROV;
         private TextBox CORREO;
         private TextBox TELEFONO;
         private TextBox DIRECCION;
@@ -194,5 +192,8 @@
         private Label label4;
         private Label label2;
         private Label label1;
+        private Button button1;
+        private Button button2;
+        private Button button3;
     }
 }

@@ -39,7 +39,7 @@
             this.TELEFONO = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.ID_PROV = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -139,20 +139,19 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // comboBox1
+            // ID_PROV
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(169, 18);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(135, 23);
-            this.comboBox1.TabIndex = 12;
+            this.ID_PROV.Location = new System.Drawing.Point(169, 18);
+            this.ID_PROV.Name = "ID_PROV";
+            this.ID_PROV.Size = new System.Drawing.Size(135, 23);
+            this.ID_PROV.TabIndex = 12;
             // 
             // Proveedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.ID_PROV);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.CORREO);
@@ -185,6 +184,6 @@
         private TextBox TELEFONO;
         private Button button1;
         private Button button2;
-        private ComboBox comboBox1;
+        private TextBox ID_PROV;
     }
 }

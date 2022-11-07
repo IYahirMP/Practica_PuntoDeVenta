@@ -109,20 +109,21 @@
             // rEGISTRARToolStripMenuItem
             // 
             this.rEGISTRARToolStripMenuItem.Name = "rEGISTRARToolStripMenuItem";
-            this.rEGISTRARToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.rEGISTRARToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.rEGISTRARToolStripMenuItem.Text = "REGISTRAR";
             this.rEGISTRARToolStripMenuItem.Click += new System.EventHandler(this.rEGISTRARToolStripMenuItem_Click);
             // 
             // mODIFICARToolStripMenuItem
             // 
             this.mODIFICARToolStripMenuItem.Name = "mODIFICARToolStripMenuItem";
-            this.mODIFICARToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.mODIFICARToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.mODIFICARToolStripMenuItem.Text = "MODIFICAR";
+            this.mODIFICARToolStripMenuItem.Click += new System.EventHandler(this.mODIFICARToolStripMenuItem_Click);
             // 
             // eLIMINARToolStripMenuItem
             // 
             this.eLIMINARToolStripMenuItem.Name = "eLIMINARToolStripMenuItem";
-            this.eLIMINARToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.eLIMINARToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.eLIMINARToolStripMenuItem.Text = "ELIMINAR";
             // 
             // pRODUCTOSToolStripMenuItem
@@ -196,20 +197,20 @@
             // rEGISTRARToolStripMenuItem3
             // 
             this.rEGISTRARToolStripMenuItem3.Name = "rEGISTRARToolStripMenuItem3";
-            this.rEGISTRARToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
+            this.rEGISTRARToolStripMenuItem3.Size = new System.Drawing.Size(137, 22);
             this.rEGISTRARToolStripMenuItem3.Text = "REGISTRAR";
             this.rEGISTRARToolStripMenuItem3.Click += new System.EventHandler(this.rEGISTRARToolStripMenuItem3_Click);
             // 
             // mODIFICARToolStripMenuItem3
             // 
             this.mODIFICARToolStripMenuItem3.Name = "mODIFICARToolStripMenuItem3";
-            this.mODIFICARToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
+            this.mODIFICARToolStripMenuItem3.Size = new System.Drawing.Size(137, 22);
             this.mODIFICARToolStripMenuItem3.Text = "MODIFICAR";
             // 
             // eLIMINARToolStripMenuItem3
             // 
             this.eLIMINARToolStripMenuItem3.Name = "eLIMINARToolStripMenuItem3";
-            this.eLIMINARToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
+            this.eLIMINARToolStripMenuItem3.Size = new System.Drawing.Size(137, 22);
             this.eLIMINARToolStripMenuItem3.Text = "ELIMINAR";
             // 
             // dETALLEDEVENTAToolStripMenuItem
@@ -225,20 +226,20 @@
             // rEGISTRARToolStripMenuItem4
             // 
             this.rEGISTRARToolStripMenuItem4.Name = "rEGISTRARToolStripMenuItem4";
-            this.rEGISTRARToolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
+            this.rEGISTRARToolStripMenuItem4.Size = new System.Drawing.Size(137, 22);
             this.rEGISTRARToolStripMenuItem4.Text = "REGISTRAR";
             this.rEGISTRARToolStripMenuItem4.Click += new System.EventHandler(this.rEGISTRARToolStripMenuItem4_Click);
             // 
             // mODIFICARToolStripMenuItem4
             // 
             this.mODIFICARToolStripMenuItem4.Name = "mODIFICARToolStripMenuItem4";
-            this.mODIFICARToolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
+            this.mODIFICARToolStripMenuItem4.Size = new System.Drawing.Size(137, 22);
             this.mODIFICARToolStripMenuItem4.Text = "MODIFICAR";
             // 
             // eLIMINARToolStripMenuItem4
             // 
             this.eLIMINARToolStripMenuItem4.Name = "eLIMINARToolStripMenuItem4";
-            this.eLIMINARToolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
+            this.eLIMINARToolStripMenuItem4.Size = new System.Drawing.Size(137, 22);
             this.eLIMINARToolStripMenuItem4.Text = "ELIMINAR";
             // 
             // pictureBox1

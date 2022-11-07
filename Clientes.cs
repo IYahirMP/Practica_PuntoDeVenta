@@ -26,7 +26,7 @@ namespace Practica
         private void button1_Click(object sender, EventArgs e)
         {
             MySqlConnection conexion;
-            conexion = new MySqlConnection("server=localhost;user=root;database=tienda;port=3306");
+            conexion = new MySqlConnection("server=localhost;user=root;database=tienda;port=3308");
 
             try
             {

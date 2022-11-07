@@ -17,9 +17,8 @@ namespace Practica
         {
             InitializeComponent();
         }
-        //cadena de conexion
-        //"server = <servidor>; user id = <usuario>; password = <contraseña>; database = <nombre de la base de datos>;"
-        private MySqlConnection conexion = new MySqlConnection("server=localhost;user=root;database=tienda;port=3306");
+
+        private MySqlConnection conexion = new MySqlConnection("server=localhost;user=root;database=tienda;port=3308");
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -48,8 +47,6 @@ namespace Practica
 
         private void button1_Click(object sender, EventArgs e)
         {
-            conexion = new MySqlConnection("server=localhost;user=root;database=tienda;port=3306");
-
             try
             {
                 conexion.Open();
@@ -60,6 +57,7 @@ namespace Practica
                 comando.Parameters.Add("TEL", MySqlDbType.VarChar).Value = TELEFONO.Text;
                 comando.Parameters.Add("CORREO", MySqlDbType.VarChar).Value = CORREO.Text;
                 comando.ExecuteNonQuery();
+                conexion.Close();
                 MessageBox.Show("Registro exitoso");
             }
             catch (Exception ex) { MessageBox.Show(ex.Message); }

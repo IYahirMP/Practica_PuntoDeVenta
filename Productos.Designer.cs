@@ -46,20 +46,20 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(192, 185);
+            this.button2.Location = new System.Drawing.Point(268, 199);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 23;
+            this.button2.TabIndex = 8;
             this.button2.Text = "Limpiar";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(43, 185);
+            this.button1.Location = new System.Drawing.Point(60, 199);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 22;
+            this.button1.TabIndex = 7;
             this.button1.Text = "Registrar";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -68,8 +68,8 @@
             // 
             this.DESCRIPCION.Location = new System.Drawing.Point(173, 78);
             this.DESCRIPCION.Name = "DESCRIPCION";
-            this.DESCRIPCION.Size = new System.Drawing.Size(135, 23);
-            this.DESCRIPCION.TabIndex = 19;
+            this.DESCRIPCION.Size = new System.Drawing.Size(250, 23);
+            this.DESCRIPCION.TabIndex = 3;
             // 
             // label4
             // 
@@ -102,30 +102,30 @@
             // 
             this.ID_PROD.Location = new System.Drawing.Point(173, 23);
             this.ID_PROD.Name = "ID_PROD";
-            this.ID_PROD.Size = new System.Drawing.Size(135, 23);
-            this.ID_PROD.TabIndex = 24;
+            this.ID_PROD.Size = new System.Drawing.Size(250, 23);
+            this.ID_PROD.TabIndex = 1;
             // 
             // ID_PROV
             // 
             this.ID_PROV.FormattingEnabled = true;
             this.ID_PROV.Location = new System.Drawing.Point(173, 49);
             this.ID_PROV.Name = "ID_PROV";
-            this.ID_PROV.Size = new System.Drawing.Size(135, 23);
-            this.ID_PROV.TabIndex = 25;
+            this.ID_PROV.Size = new System.Drawing.Size(250, 23);
+            this.ID_PROV.TabIndex = 2;
             // 
             // Precio
             // 
             this.Precio.Location = new System.Drawing.Point(173, 107);
             this.Precio.Name = "Precio";
-            this.Precio.Size = new System.Drawing.Size(135, 23);
-            this.Precio.TabIndex = 30;
+            this.Precio.Size = new System.Drawing.Size(250, 23);
+            this.Precio.TabIndex = 4;
             // 
             // StockMinimo
             // 
             this.StockMinimo.Location = new System.Drawing.Point(173, 162);
             this.StockMinimo.Name = "StockMinimo";
-            this.StockMinimo.Size = new System.Drawing.Size(135, 23);
-            this.StockMinimo.TabIndex = 29;
+            this.StockMinimo.Size = new System.Drawing.Size(250, 23);
+            this.StockMinimo.TabIndex = 6;
             // 
             // label3
             // 
@@ -158,14 +158,14 @@
             // 
             this.StockMaximo.Location = new System.Drawing.Point(173, 136);
             this.StockMaximo.Name = "StockMaximo";
-            this.StockMaximo.Size = new System.Drawing.Size(135, 23);
-            this.StockMaximo.TabIndex = 31;
+            this.StockMaximo.Size = new System.Drawing.Size(250, 23);
+            this.StockMaximo.TabIndex = 5;
             // 
             // Productos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(454, 234);
             this.Controls.Add(this.StockMaximo);
             this.Controls.Add(this.Precio);
             this.Controls.Add(this.StockMinimo);
