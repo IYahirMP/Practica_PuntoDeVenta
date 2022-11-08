@@ -41,6 +41,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.Eliminar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ID_PROV
@@ -48,7 +49,7 @@
             this.ID_PROV.FormattingEnabled = true;
             this.ID_PROV.Location = new System.Drawing.Point(157, 6);
             this.ID_PROV.Name = "ID_PROV";
-            this.ID_PROV.Size = new System.Drawing.Size(135, 23);
+            this.ID_PROV.Size = new System.Drawing.Size(231, 23);
             this.ID_PROV.TabIndex = 25;
             this.ID_PROV.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -56,28 +57,28 @@
             // 
             this.CORREO.Location = new System.Drawing.Point(157, 122);
             this.CORREO.Name = "CORREO";
-            this.CORREO.Size = new System.Drawing.Size(135, 23);
+            this.CORREO.Size = new System.Drawing.Size(231, 23);
             this.CORREO.TabIndex = 22;
             // 
             // TELEFONO
             // 
             this.TELEFONO.Location = new System.Drawing.Point(157, 93);
             this.TELEFONO.Name = "TELEFONO";
-            this.TELEFONO.Size = new System.Drawing.Size(135, 23);
+            this.TELEFONO.Size = new System.Drawing.Size(231, 23);
             this.TELEFONO.TabIndex = 21;
             // 
             // DIRECCION
             // 
             this.DIRECCION.Location = new System.Drawing.Point(157, 64);
             this.DIRECCION.Name = "DIRECCION";
-            this.DIRECCION.Size = new System.Drawing.Size(135, 23);
+            this.DIRECCION.Size = new System.Drawing.Size(231, 23);
             this.DIRECCION.TabIndex = 20;
             // 
             // NOMBRE
             // 
             this.NOMBRE.Location = new System.Drawing.Point(157, 35);
             this.NOMBRE.Name = "NOMBRE";
-            this.NOMBRE.Size = new System.Drawing.Size(135, 23);
+            this.NOMBRE.Size = new System.Drawing.Size(231, 23);
             this.NOMBRE.TabIndex = 19;
             // 
             // label5
@@ -127,7 +128,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 177);
+            this.button1.Location = new System.Drawing.Point(11, 177);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 26;
@@ -137,7 +138,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(123, 177);
+            this.button2.Location = new System.Drawing.Point(115, 177);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 27;
@@ -147,7 +148,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(224, 177);
+            this.button3.Location = new System.Drawing.Point(313, 177);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 28;
@@ -155,11 +156,22 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // Eliminar
+            // 
+            this.Eliminar.Location = new System.Drawing.Point(216, 177);
+            this.Eliminar.Name = "Eliminar";
+            this.Eliminar.Size = new System.Drawing.Size(75, 23);
+            this.Eliminar.TabIndex = 29;
+            this.Eliminar.Text = "Eliminar";
+            this.Eliminar.UseVisualStyleBackColor = true;
+            this.Eliminar.Click += new System.EventHandler(this.Eliminar_Click);
+            // 
             // ModificarProveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(311, 212);
+            this.ClientSize = new System.Drawing.Size(400, 212);
+            this.Controls.Add(this.Eliminar);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -195,5 +207,6 @@
         private Button button1;
         private Button button2;
         private Button button3;
+        private Button Eliminar;
     }
 }

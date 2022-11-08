@@ -1,13 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace Practica
 {
@@ -15,12 +7,13 @@ namespace Practica
     {
         string conexion = "server=localhost; uid=root; database=tienda; port=3308";
 
-        public void cargar_ID_PROV() {
+        public void cargar_ID_PROV()
+        {
             MySqlConnection conn = new MySqlConnection(conexion);
             DataSet tabla = new DataSet();
             string consulta = "SELECT ID_PROV FROM proveedor";
 
-            
+
 
             try
             {
@@ -28,7 +21,8 @@ namespace Practica
                 interfaz.Fill(tabla, "ID_PROV");
                 ID_PROV.ValueMember = "ID_PROV";
                 ID_PROV.DataSource = tabla.Tables[0];
-            } catch(Exception e)
+            }
+            catch (Exception e)
             {
                 MessageBox.Show("Ha ocurrido un problema al cargar la lista de identificadores de proveedor.\n"
                     + e.Message);
@@ -49,10 +43,11 @@ namespace Practica
                 DIRECCION.Text = (string)tabla.Tables[0].Rows[0]["direccion"];
                 TELEFONO.Text = (string)tabla.Tables[0].Rows[0]["telefono"];
                 CORREO.Text = (string)tabla.Tables[0].Rows[0]["correo"];
-            }catch(Exception e)
+            }
+            catch (Exception e)
             {
                 MessageBox.Show("Ha ocurrido un error:\n" + e.Message);
-            } 
+            }
         }
         public ModificarProveedor()
         {
@@ -86,19 +81,48 @@ namespace Practica
                 actualizar.ExecuteNonQuery();
                 MessageBox.Show($"Registro {ID_PROV.SelectedValue} actualizado correctamente.");
                 conn.Close();
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show($"Ha ocurrido un error al actualizar los datos del registro {ID_PROV.SelectedValue}\n" + ex.Message);
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        public void limpiar()
         {
             ID_PROV.ResetText();
             NOMBRE.Text = "";
             DIRECCION.Text = "";
             TELEFONO.Text = "";
             CORREO.Text = "";
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            limpiar();
+        }
+
+        private void Eliminar_Click(object sender, EventArgs e)
+        {
+            MySqlConnection conn = new MySqlConnection(conexion);
+            string consulta = $"delete from proveedor where ID_PROV = {ID_PROV.SelectedValue}";
+            MySqlCommand com = new MySqlCommand(consulta, conn);
+
+            try
+            {
+                conn.Open();
+                com.ExecuteNonQuery();
+                conn.Close();
+
+                cargar_ID_PROV();
+                limpiar();
+                MessageBox.Show("El registro ha sido eliminado con éxito.");
+                
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show($"Ha ocurrido un error al eliminar el registro. {ex.Message}");
+            }
         }
     }
 }

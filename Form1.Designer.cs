@@ -109,22 +109,23 @@
             // rEGISTRARToolStripMenuItem
             // 
             this.rEGISTRARToolStripMenuItem.Name = "rEGISTRARToolStripMenuItem";
-            this.rEGISTRARToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.rEGISTRARToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.rEGISTRARToolStripMenuItem.Text = "REGISTRAR";
             this.rEGISTRARToolStripMenuItem.Click += new System.EventHandler(this.rEGISTRARToolStripMenuItem_Click);
             // 
             // mODIFICARToolStripMenuItem
             // 
             this.mODIFICARToolStripMenuItem.Name = "mODIFICARToolStripMenuItem";
-            this.mODIFICARToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.mODIFICARToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.mODIFICARToolStripMenuItem.Text = "MODIFICAR";
             this.mODIFICARToolStripMenuItem.Click += new System.EventHandler(this.mODIFICARToolStripMenuItem_Click);
             // 
             // eLIMINARToolStripMenuItem
             // 
             this.eLIMINARToolStripMenuItem.Name = "eLIMINARToolStripMenuItem";
-            this.eLIMINARToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.eLIMINARToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.eLIMINARToolStripMenuItem.Text = "ELIMINAR";
+            this.eLIMINARToolStripMenuItem.Click += new System.EventHandler(this.eLIMINARToolStripMenuItem_Click);
             // 
             // pRODUCTOSToolStripMenuItem
             // 
@@ -148,12 +149,14 @@
             this.mODIFICARToolStripMenuItem1.Name = "mODIFICARToolStripMenuItem1";
             this.mODIFICARToolStripMenuItem1.Size = new System.Drawing.Size(137, 22);
             this.mODIFICARToolStripMenuItem1.Text = "MODIFICAR";
+            this.mODIFICARToolStripMenuItem1.Click += new System.EventHandler(this.mODIFICARToolStripMenuItem1_Click);
             // 
             // eLIMINARToolStripMenuItem1
             // 
             this.eLIMINARToolStripMenuItem1.Name = "eLIMINARToolStripMenuItem1";
             this.eLIMINARToolStripMenuItem1.Size = new System.Drawing.Size(137, 22);
             this.eLIMINARToolStripMenuItem1.Text = "ELIMINAR";
+            this.eLIMINARToolStripMenuItem1.Click += new System.EventHandler(this.eLIMINARToolStripMenuItem1_Click);
             // 
             // cLIENTESToolStripMenuItem
             // 
@@ -177,12 +180,14 @@
             this.mODIFICARToolStripMenuItem2.Name = "mODIFICARToolStripMenuItem2";
             this.mODIFICARToolStripMenuItem2.Size = new System.Drawing.Size(137, 22);
             this.mODIFICARToolStripMenuItem2.Text = "MODIFICAR";
+            this.mODIFICARToolStripMenuItem2.Click += new System.EventHandler(this.mODIFICARToolStripMenuItem2_Click);
             // 
             // eLIMINARToolStripMenuItem2
             // 
             this.eLIMINARToolStripMenuItem2.Name = "eLIMINARToolStripMenuItem2";
             this.eLIMINARToolStripMenuItem2.Size = new System.Drawing.Size(137, 22);
             this.eLIMINARToolStripMenuItem2.Text = "ELIMINAR";
+            this.eLIMINARToolStripMenuItem2.Click += new System.EventHandler(this.eLIMINARToolStripMenuItem2_Click);
             // 
             // vENTASToolStripMenuItem
             // 
@@ -206,12 +211,14 @@
             this.mODIFICARToolStripMenuItem3.Name = "mODIFICARToolStripMenuItem3";
             this.mODIFICARToolStripMenuItem3.Size = new System.Drawing.Size(137, 22);
             this.mODIFICARToolStripMenuItem3.Text = "MODIFICAR";
+            this.mODIFICARToolStripMenuItem3.Click += new System.EventHandler(this.mODIFICARToolStripMenuItem3_Click);
             // 
             // eLIMINARToolStripMenuItem3
             // 
             this.eLIMINARToolStripMenuItem3.Name = "eLIMINARToolStripMenuItem3";
             this.eLIMINARToolStripMenuItem3.Size = new System.Drawing.Size(137, 22);
             this.eLIMINARToolStripMenuItem3.Text = "ELIMINAR";
+            this.eLIMINARToolStripMenuItem3.Click += new System.EventHandler(this.eLIMINARToolStripMenuItem3_Click);
             // 
             // dETALLEDEVENTAToolStripMenuItem
             // 
@@ -226,21 +233,23 @@
             // rEGISTRARToolStripMenuItem4
             // 
             this.rEGISTRARToolStripMenuItem4.Name = "rEGISTRARToolStripMenuItem4";
-            this.rEGISTRARToolStripMenuItem4.Size = new System.Drawing.Size(137, 22);
+            this.rEGISTRARToolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
             this.rEGISTRARToolStripMenuItem4.Text = "REGISTRAR";
             this.rEGISTRARToolStripMenuItem4.Click += new System.EventHandler(this.rEGISTRARToolStripMenuItem4_Click);
             // 
             // mODIFICARToolStripMenuItem4
             // 
             this.mODIFICARToolStripMenuItem4.Name = "mODIFICARToolStripMenuItem4";
-            this.mODIFICARToolStripMenuItem4.Size = new System.Drawing.Size(137, 22);
+            this.mODIFICARToolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
             this.mODIFICARToolStripMenuItem4.Text = "MODIFICAR";
+            this.mODIFICARToolStripMenuItem4.Click += new System.EventHandler(this.mODIFICARToolStripMenuItem4_Click);
             // 
             // eLIMINARToolStripMenuItem4
             // 
             this.eLIMINARToolStripMenuItem4.Name = "eLIMINARToolStripMenuItem4";
-            this.eLIMINARToolStripMenuItem4.Size = new System.Drawing.Size(137, 22);
+            this.eLIMINARToolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
             this.eLIMINARToolStripMenuItem4.Text = "ELIMINAR";
+            this.eLIMINARToolStripMenuItem4.Click += new System.EventHandler(this.eLIMINARToolStripMenuItem4_Click);
             // 
             // pictureBox1
             // 

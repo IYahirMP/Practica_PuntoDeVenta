@@ -1,13 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace Practica
 {
@@ -42,21 +34,23 @@ namespace Practica
             catch (MySqlException ex) { MessageBox.Show("Ha ocurrido un error: \n" + ex.Message); }
         }
 
-        public int obtenerIDProv() {
+        public int obtenerIDProv()
+        {
             MySqlConnection conexion = new MySqlConnection(conn);
             string sql = $"SELECT ID_PROV FROM proveedor WHERE nombre = \"{ID_PROV.SelectedValue}\"";
             MySqlCommand consulta = new MySqlCommand(sql, conexion);
-            Object resultado = null;
+            Object resultado = new Object();
             try
             {
                 conexion.Open();
                 resultado = consulta.ExecuteScalar();
-            } catch(Exception e)
+            }
+            catch (Exception e)
             {
                 MessageBox.Show("Ha ocurrido un error al obtener el ID del proveedor."
                     + "\nError:\n" + e.Message);
             }
-            
+
             int idProv = 0;
             if (resultado != null)
                 idProv = (int)resultado;
@@ -90,6 +84,9 @@ namespace Practica
             ID_PROD.Clear();
             DESCRIPCION.Clear();
             ID_PROV.ResetText();
+            Precio.Text = "";
+            StockMaximo.Text = "";
+            StockMinimo.Text = "";
         }
 
         private void ID_PROD_TextChanged(object sender, EventArgs e)

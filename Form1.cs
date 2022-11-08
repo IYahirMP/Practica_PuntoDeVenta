@@ -1,3 +1,8 @@
+using Practica.Cliente;
+using Practica.Producto;
+using Practica.DetalleVenta;
+using Practica.Venta;
+
 namespace Practica
 {
     public partial class Form1 : Form
@@ -48,7 +53,7 @@ namespace Practica
 
         private void rEGISTRARToolStripMenuItem4_Click(object sender, EventArgs e)
         {
-            DetalleVenta ventana = new DetalleVenta();
+            DetalleVentas ventana = new DetalleVentas();
             ventana.Show();
         }
 
@@ -56,6 +61,51 @@ namespace Practica
         {
             ModificarProveedor ventana = new ModificarProveedor();
             ventana.Show();
+        }
+
+        private void eLIMINARToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void mODIFICARToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ModificarProducto ventana = new ModificarProducto();
+            ventana.Show();
+        }
+
+        private void eLIMINARToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void mODIFICARToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            ModificarCliente ventana = new ModificarCliente();
+            ventana.Show();
+        }
+
+        private void eLIMINARToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void mODIFICARToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            ModificarVenta ventana = new ModificarVenta();
+            ventana.Show();
+        }
+
+        private void eLIMINARToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void mODIFICARToolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            ModificarDetalleVenta ventana = new ModificarDetalleVenta();
+            ventana.Show();
+        }
+
+        private void eLIMINARToolStripMenuItem4_Click(object sender, EventArgs e)
+        {
         }
     }
 }

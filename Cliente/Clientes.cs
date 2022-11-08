@@ -1,13 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using MySql.Data.MySqlClient;
+﻿using MySql.Data.MySqlClient;
 
 namespace Practica
 {
@@ -60,6 +51,6 @@ namespace Practica
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-                    }
+        }
     }
 }
