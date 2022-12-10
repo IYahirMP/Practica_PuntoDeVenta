@@ -68,7 +68,7 @@ namespace Practica.DetalleVenta
         private void Actualizar_Click(object sender, EventArgs e)
         {
             MySqlConnection conn = new MySqlConnection(stringConn);
-            string actualizacion = $"UPDATE proveedor SET ID_PROD = {ID_PROD.Text}, ID_VENTA = {ID_VENTA.Text}, CANTIDAD = {CANTIDAD.Text} WHERE ID_DV = {ID_DV.SelectedValue}";
+            string actualizacion = $"UPDATE detalle SET ID_PROD = {ID_PROD.Text}, ID_VENTA = {ID_VENTA.Text}, CANTIDAD = {CANTIDAD.Text} WHERE ID_DV = {ID_DV.SelectedValue}";
             MySqlCommand actualizar = new MySqlCommand(actualizacion, conn);
             try
             {
